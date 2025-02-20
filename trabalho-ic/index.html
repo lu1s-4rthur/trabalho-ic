@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect CMS - Grupo 5</title>
+
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+
+    <!-- Ícones FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Barra Superior -->
+    <header class="top-bar d-flex align-items-center">
+        <div class="logo text-white fw-bold ms-3">
+            <span class="logo-text">PERFECT <span class="cms">CMS</span></span>
+            <div class="tagline">SAVE YOUR TIME</div>
+        </div>
+        <i class="fa fa-globe ms-5"></i>
+        <div class="ms-auto me-3">
+            <i class="fa fa-edit me-3"></i>
+            <i class="fa fa-cog me-3"></i>
+            <i class="fa fa-sign-out"></i>
+        </div>
+    </header>
+
+    <!-- Layout Principal -->
+    <div class="d-flex">
+        <!-- Menu Lateral -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="#" class="sidebar-icon"><i class="fas fa-home"></i></a>
+                <a href="#" class="sidebar-icon"><i class="fas fa-chart-bar"></i></a>
+                <a href="#" class="sidebar-icon"><i class="fas fa-puzzle-piece"></i></a>
+            </div>
+            <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#"><i class="fas fa-newspaper"></i> News</a></li>
+                <li><a href="#"><i class="fas fa-file-alt"></i> Pages</a></li>
+                <li><a href="#"><i class="fas fa-list-ul"></i> Categories</a></li>
+                <li><a href="#"><i class="fas fa-comments"></i> Comments</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Mailing</a></li>
+                <li><a href="#"><i class="fas fa-vote-yea"></i> Votes</a></li>
+                <li><a href="#"><i class="fas fa-heart"></i> Reviews</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> Users</a></li>
+                <li class="active"><a href="#" class="nav-link active"><i class="fa fa-language"></i> Languages</a></li>
+                <li><a href="#"><i class="fas fa-exclamation-triangle"></i> HTTP Errors</a></li>
+                <li><a href="#"><i class="fas fa-comment-dots"></i> Feedback</a></li>
+                <li><a href="#"><i class="fas fa-code"></i> TPL Editor</a></li>
+            </ul>
+        </nav></aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="content p-4 w-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h6 class="text-muted"><u>Dashboard</u> » <b>Languages</b></h6>
+                <button class="btn btn-dark">Add</button>
+            </div>
+
+            <!-- Tabela -->
+            <div class="table-responsive">
+                <table class="table table-bordered text-center">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>FLAG</th>
+                            <th>TITLE</th>
+                            <th>CODE</th>
+                            <th>DEFAULT</th>
+                            <th>STATUS</th>
+                            <th>OPTIONS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><img src="assets/germany.png" alt="Germany" class="flag"></td>
+                            <td>Русский</td>
+                            <td>ru</td>
+                            <td><input type="radio" name="default-lang"></td>
+                            <td><i class="fa fa-lightbulb text-secondary"></i></td>
+                            <td>
+                                <i class="fa fa-download me-2 text-dark"></i>
+                                <i class="fa fa-eye me-2 text-dark"></i>
+                                <i class="fa fa-trash text-danger"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><img src="assets/usa.png" alt="USA" class="flag"></td>
+                            <td>English</td>
+                            <td>en</td>
+                            <td><input type="radio" name="default-lang" checked></td>
+                            <td><i class="fa fa-lightbulb text-secondary"></i></td>
+                            <td>
+                                <i class="fa fa-download me-2 text-dark"></i>
+                                <i class="fa fa-eye me-2 text-dark"></i>
+                                <i class="fa fa-trash text-danger"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
